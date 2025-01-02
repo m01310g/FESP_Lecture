@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>계산기 예제</title>
+    <!-- React Library -->
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <!-- Babel Library -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- Babel 코드로 설정 -->
+    <script type="text/babel" src="calc.js" defer></script>
+</head>
+<body>
+    <div id="root"></div>
+    <section id="calc-app">
+        <h1>덧셈 계산기</h1>
+        <form>
+            <fieldset>
+                <legend>계산기 입력폼</legend>
+                <div>
+                    <label>x: </label><input dir="rtl" v-model.number="num1" />
+                    <label> y: </label><input dir="rtl" v-model.number="num2" />
+                    <span>&nbsp;=&nbsp;</span><span v-text="result">0</span>
+                </div>
+                <hr />
+                <div>
+                    <input type="submit" value="초기화" @click.prevent="resetHandler" />
+                    <input type="submit" value="계산하기" @click.prevent="resultClickHandler" />
+                </div>
+            </fieldset>
+        </form>
+    </section>
+</body>
+</html>
