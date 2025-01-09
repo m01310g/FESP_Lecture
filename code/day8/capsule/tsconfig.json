@@ -1,0 +1,9 @@
+{
+    // "compilerOptions": {
+    //     "target": "ES2017",
+    //     "outDir": "./dist",
+    //     "rootDir": "./src"
+    // }
+    // "include": ["src", "ex_1.ts"]
+    // "exclude": ["node_modules", "index.ts"]
+}

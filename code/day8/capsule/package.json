@@ -1,0 +1,23 @@
+{
+    "type": "module",
+    "name": "day8",
+    "version": "1.0.0",
+    "main": "exam-datahiding.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "npx vite build && npx vite",
+        "dev": "npx vite"
+    },
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "dependencies": {
+        "react-dom": "^19.0.0",
+        "readline-sync": "^1.4.10"
+    },
+    "devDependencies": {
+        "@types/react": "^19.0.4",
+        "@vitejs/plugin-react": "^4.3.4",
+        "vite": "^6.0.7"
+    }
+}
