@@ -1,5 +1,6 @@
 // type: void
-const Header = () => {
+// FC: Function Component
+const Header: React.FC = () => {
     return (
         <header>
             <div className="n-content xl:w:xlarge">
