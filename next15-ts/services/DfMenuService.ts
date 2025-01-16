@@ -1,6 +1,6 @@
-import { Menu } from "@/entities/Menu";
 import { MenuListModel } from "@/models/MenuListModel";
-import { SbMenuRepository } from "@/repositories/SbMenuRepository";
+import { SbMenuRepository } from "@/infrastructure/repositories/SbMenuRepository";
+import { Menu } from "@/domain/entities/Menu";
 
 export class DfMenuService {
     // supabase를 이용한 repository 필요

@@ -1,4 +1,4 @@
-import { Menu } from "@/entities/Menu";
+import { Menu } from "@/domain/entities/Menu";
 import { createClient } from "@/utils/supabase/server";
 
 export class SbMenuRepository {

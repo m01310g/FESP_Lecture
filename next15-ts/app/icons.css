@@ -1,0 +1,23 @@
+.n-icon\:add::before {
+  content: "\e145";
+}
+
+.n-icon\:credit_card::before {
+  content: "\e870";
+}
+
+.n-icon\:favorite::before {
+  content: "\e87d";
+}
+
+.n-icon\:home::before {
+  content: "\e88a";
+}
+
+.n-icon\:remove::before {
+  content: "\e15b";
+}
+
+.n-icon\:shopping_cart::before {
+  content: "\e8cc";
+}
