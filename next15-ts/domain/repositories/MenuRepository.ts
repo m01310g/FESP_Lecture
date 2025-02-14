@@ -1,5 +1,6 @@
 import { Menu } from "../entities/Menu";
 
 export interface MenuRepository {
-    findAll(): Promise<Menu[]>;
+    count(): number | PromiseLike<number>;
+    findAll(keyword: string, from: number, to: number): Promise<Menu[]>;
 }
