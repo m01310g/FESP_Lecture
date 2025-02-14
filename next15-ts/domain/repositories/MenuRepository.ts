@@ -1,6 +1,13 @@
 import { Menu } from "../entities/Menu";
 
 export interface MenuRepository {
-    count(): number | PromiseLike<number>;
-    findAll(keyword: string, from: number, to: number): Promise<Menu[]>;
+  findById(id: string | undefined): Menu | PromiseLike<Menu>;
+  save(menu: Menu): Promise<Menu>;
+  count(): number | PromiseLike<number>;
+  findAll(
+    keyword: string,
+    from: number,
+    to: number,
+    categoryId: string
+  ): Promise<Menu[]>;
 }

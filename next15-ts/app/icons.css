@@ -21,3 +21,11 @@
 .n-icon\:shopping_cart::before {
   content: "\e8cc";
 }
+
+.n-icon\:search::before {
+  content: "\e8b6";
+}
+
+.n-icon\:star::before {
+  content: "\e838";
+}

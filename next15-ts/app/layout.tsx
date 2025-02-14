@@ -1,3 +1,5 @@
+"use client";
+
 import "newtil-css/dist/style.min.css";
 import "./global.css";
 import "./icons.css";
@@ -9,7 +11,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>알랜드에 오신 것을 환영합니다.</title>
+        <title>NCafe에 오신 것을 환영합니다.</title>
         <link
           rel="stylesheet"
           crossOrigin="anonymous"
@@ -17,9 +19,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
           href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css"
         />
       </head>
-      <body>
-        <div>{children}</div>
-      </body>
+      <body>{children}</body>
     </html>
   );
 };
