@@ -4,13 +4,32 @@ import styles from "./page.module.scss";
 import Link from "next/link";
 import FilterForm from "./components/filter-form";
 
-const List = async () => {
-    const res = await fetch("http://localhost:3000/api/menus");
+const List = async ({
+    params,
+    searchParams,
+}: {
+    params: Promise<{ params: string }>;
+    searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
+}) => {
+    const query = await searchParams;
+    const queryObject = { categoryId: query.c, searchWord: query.s };
+
+    let queryString = "";
+
+    if (query.c) {
+        queryString = `?c=${query.c}`;
+    }
+
+    if (query.s) {
+        queryString = `?keyword=${query.s}`;
+    }
+
+    const res = await fetch(`http://localhost:3000/api/menus${queryString}`);
     const data: MenuListDto = await res.json();
 
     return (
         <main>
-            <FilterForm />
+            <FilterForm query={queryObject} />
             <div className={styles["menus-box"]}>
                 <section className={styles["menus"]}>
                     <h1 className="d:none">메뉴 목록</h1>
